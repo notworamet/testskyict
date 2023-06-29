@@ -26,7 +26,7 @@ module.exports = {
 
   configure: function (app) {
     app.get('/',  async function (req, res) {
-      res.send("Wellcom Test Skyict")
+      res.send("Welcome Test Skyict")
     });
 
     app.post('/abc', function (req, res) {
