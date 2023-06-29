@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "c9403ef3-6296-42b9-b75c-55342c81a941",
+		"name": "Test Skyict",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9208532"
+	},
+	"item": [
+		{
+			"name": "API supstr",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\":\"catbutterflydog\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.test.com/abc",
+					"protocol": "http",
+					"host": [
+						"www",
+						"test",
+						"com"
+					],
+					"path": [
+						"abc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"user02\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.test.com/login",
+					"protocol": "http",
+					"host": [
+						"www",
+						"test",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				},
+				"description": "Login "
+			},
+			"response": []
+		},
+		{
+			"name": "API Getcustomer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjEsInVzZXJuYW1lIjoidXNlcjAxIiwicm9sZWlkIjoxMCwiaWF0IjoxNjg3OTczMjkyLCJleHAiOjE2ODc5NzY4OTJ9.xgJSEB0O7XjLJJ91Dj90vkQlTYwpc-YCVQ5OyUihExE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://www.test.com/customer",
+					"protocol": "http",
+					"host": [
+						"www",
+						"test",
+						"com"
+					],
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Updatecustomer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjIsInVzZXJuYW1lIjoidXNlcjAyIiwicm9sZWlkIjoxLCJpYXQiOjE2ODc5NzMzMTYsImV4cCI6MTY4Nzk3NjkxNn0.2Ir49RENTObwqb5O_QfQ_vwTXKZwrGEH_ZCbT5XCLmI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"12\",\r\n    \"address\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.test.com/customer",
+					"protocol": "http",
+					"host": [
+						"www",
+						"test",
+						"com"
+					],
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Deletecustomer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjIsInVzZXJuYW1lIjoidXNlcjAyIiwicm9sZWlkIjoxLCJpYXQiOjE2ODc5NzMzMTYsImV4cCI6MTY4Nzk3NjkxNn0.2Ir49RENTObwqb5O_QfQ_vwTXKZwrGEH_ZCbT5XCLmI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.test.com/customer",
+					"protocol": "http",
+					"host": [
+						"www",
+						"test",
+						"com"
+					],
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Insertcustomer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjIsInVzZXJuYW1lIjoidXNlcjAyIiwicm9sZWlkIjoxLCJpYXQiOjE2ODgwMDc1NDcsImV4cCI6MTY4ODAxMTE0N30.U2jnqqn2an3I-7Rd6FOHSGFzAyHJ1jIfTjtsIX3H-RE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"custname\": \"ทดสอบ\",\r\n    \"custcode\": \"C01\",\r\n    \"address\": \"สมุทรปราการ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.test.com/customer",
+					"protocol": "http",
+					"host": [
+						"www",
+						"test",
+						"com"
+					],
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
